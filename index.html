@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AlexChecker – диагностика ПК</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AlexChecker</h1>
+        <p>Утилита для проверки компьютера</p>
+    </header>
+    <main>
+        <section id="download">
+            <h2>Скачайте диагностический файл</h2>
+            <p>Скачайте и запустите CMD‑файл, чтобы собрать информацию о вашем компьютере. После завершения программа сгенерирует код.</p>
+            <a class="button" href="alexchecker.cmd" download>Скачать CMD‑файл</a>
+        </section>
+        <section id="enter-code">
+            <h2>Введите полученный код</h2>
+            <p>Вставьте код, полученный после запуска программы, чтобы увидеть расшифровку.</p>
+            <textarea id="codeInput" placeholder="Вставьте код здесь" rows="4"></textarea>
+            <button id="decodeButton">Показать информацию</button>
+        </section>
+        <section id="results" style="display:none;">
+            <h2>Информация о системе</h2>
+            <pre id="infoOutput"></pre>
+            <h2>Рекомендации</h2>
+            <ul id="recommendations"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
